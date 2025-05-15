@@ -13,4 +13,6 @@ with app.app_context():
     db.create_all() 
 
 if __name__ == "__main__":
-    app.run(port=5001, debug=True)  # usa porta diferente da API principal pra nn dar problema
+    app.run(port=5001, debug=True)  # usa porta diferente da API principal pra nn dar problema 
+
+#comentário para testar commit
