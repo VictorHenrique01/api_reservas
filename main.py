@@ -1,6 +1,6 @@
 from flask import Flask
-from database import db
-from reserva_route import reserva_bp 
+from app.database import db
+from routes.reserva_route import reserva_bp 
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reservas.db'
@@ -15,4 +15,3 @@ with app.app_context():
 if __name__ == "__main__":
     app.run(port=5001, debug=True)  # usa porta diferente da API principal pra nn dar problema 
 
-#comentário para testar commit
